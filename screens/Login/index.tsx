@@ -3,7 +3,8 @@ import { TouchableOpacity, View, Text, Image } from "react-native";
 import { Input } from "../../components/Input";
 import { styles } from "./styles";
 
-export default function LoginScreen() {
+
+export default function LoginScreen({navigation}) {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -11,7 +12,7 @@ export default function LoginScreen() {
     <View style={styles.container}>
       <Image source={require('../../assets/images/wavetop.png')} style={styles.imageTop}/>
       <View style={styles.welcomeContainer}>
-        <Text style={styles.welcomeText}>Bem Vindo!</Text>
+        <Text style={styles.welcomeText}>Bem-vindo!</Text>
       </View>
       <Input
         label="Login"
@@ -26,7 +27,7 @@ export default function LoginScreen() {
         secureTextEntry
       />
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.buttonlogin}>
+        <TouchableOpacity style={styles.buttonlogin} onPress={() => navigation.navigate('RecordScreen')}>
           <Text style={styles.buttonText}>Entrar</Text>
         </TouchableOpacity>
         <Text style={styles.ouText}>OU</Text>
