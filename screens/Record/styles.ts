@@ -1,12 +1,97 @@
-import { StyleSheet} from "react-native";
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor: "#111111",
-        display: "flex",
-        justifyContent: "flex-start",
-        fontFamily: "BigShoulders-Regular",
-        height:'100%'
-    }
-})
+  container: {
+    flex: 1,
+    backgroundColor: "#111111",
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
+  title: {
+    fontFamily: "Azonix",
+    fontSize: 28,
+    color: "#FFFFFF",
+    marginBottom: 10,
+  },
+  subtitle: {
+    fontFamily: "BigShoulders-Regular",
+    fontSize: 24,
+    color: "#9EBDC1",
+    marginBottom: 20,
+  },
+  topContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 30,
+    marginTop: 50,
+  },
+  recordContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 120,
+  },
+  recordButton: {
+    backgroundColor: "#5319C6",
+    borderRadius: 10,
+    padding: 10,
+    width: "50%",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    marginBottom: 20, 
+  },
+  recordButtonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontSize: 28,
+    fontFamily: "BigShoulders-Regular",
+  },
+  recordButtonIcon: {
+    width: 16,
+    height: 21,
+  },
+  waveformContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 60,
+    backgroundColor: "#222",
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: "#5319C6",
+    width: 350,
+    marginTop: 60,
+  },
+  waveformBar: {
+    width: 6,
+    marginHorizontal: 2,
+    backgroundColor: "#fff",
+    borderRadius: 10,
+  },
+  stopButton: {
+    marginTop: 100,
+  },
+  stopButtonOuter: {
+    width: 60,
+    height: 60,
+    backgroundColor: "#391C73",
+    borderRadius: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  stopButtonInner: {
+    width: 45,
+    height: 45,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 30,
+    justifyContent: "center",
+    alignItems: "center",
+},
+ stopButtonSquad: {
+        width: 15,
+        height: 15,
+        backgroundColor: "#391C73",
+        borderRadius: 2,
+    },
+});
